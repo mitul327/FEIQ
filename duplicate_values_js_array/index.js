@@ -1,14 +1,14 @@
-const names = ["Mitul", "Priyanka", "Rahul", "Pratik", "Divyanxi", "Mitul"];
+const names = ['Mitul', 'Priyanka', 'Rahul', 'Pratik', 'Divyanxi', 'Mitul']
 
 function getUnique(names) {
-    const uniqueArray = [];
-    for(const name of names) {
-        if(uniqueArray.indexOf(name) === -1) {
-            uniqueArray.push(name);
-        }
+  const uniqueArray = []
+  for (const name of names) {
+    if (uniqueArray.indexOf(name) === -1) {
+      uniqueArray.push(name)
     }
-    return uniqueArray
+  }
+  return uniqueArray
 }
 
-const uniqueNames = getUnique(names);
-console.log(uniqueNames);
+const uniqueNames = getUnique(names)
+console.log(uniqueNames)

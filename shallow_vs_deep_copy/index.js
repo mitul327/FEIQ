@@ -33,10 +33,10 @@ let deepObj = {
 let newObj = { ...deepObj }
 //newObj.places[0] = 'Ottawa' //changed inside ref.
 //newObj.places = ['Ottawa', 'Calcutta'] //new ref
-console.log('newObj', newObj, 'deeeObj', deepObj)
+console.log(newObj, deepObj)
 let otherObj = JSON.parse(JSON.stringify(deepObj))
 otherObj.places[0] = 'Ottawa'
-console.log(otherObj, deepObj)
+//console.log(otherObj, deepObj)
 
 /*********************
         Shallow Copy Method examples
@@ -50,10 +50,10 @@ console.log(otherObj, deepObj)
 let s = 'Mitul'
 let g = s
 s = 'Priyanka'
-console.log(s, g)
+//console.log(s, g)
 
 //let arr = shallowArr
 //let arr = Array.from(shallowArr)
 let arr1 = Object.assign([], shallowArr)
 shallowArr[0] = 456
-console.log('arr1 =>', arr1, 'shallowArr =>', shallowArr)
+console.log(arr1, shallowArr)

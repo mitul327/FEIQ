@@ -4,7 +4,7 @@ const name = {
 }
 
 const fullName = function (hometown, state) {
-  console.log(this.firsttname + ' ' + this.lastname + ' from ' + hometown + ', ' + state)
+  console.log(this.firstname + ' ' + this.lastname + ' from ' + hometown + ', ' + state)
 }
 fullName.call(name, 'Mumbai', 'Maharashtra')
 fullName.apply(name, ['Mumbai', 'Maharashtra'])
@@ -18,8 +18,8 @@ const name2 = {
 }
 
 //function borrowing
-fullName.call(name2, 'Surat', 'Gujarat') // call
-fullName.apply(name2, ['Surat', 'Gujarat']) //apply
+fullName.call(name2, 'Dehradun', 'Uttrakhand') // call
+fullName.apply(name2, ['Dehradun', 'Uttrakhand']) //apply
 
 //bind
 const printFullName = fullName.bind(name2, 'Dehradun', 'Uttrakhand')

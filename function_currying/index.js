@@ -13,15 +13,15 @@ const multiplyByThree = multiply.bind(this, 3);
 multiplyByThree(8);
  */
 
-const multiply = function(x) { // currying using function closures
-    return function(y) {
-        console.log(x*y)
-    }
+const multiply = function (x) {
+  // currying using function closures
+  return function (y) {
+    console.log(x * y)
+  }
 }
 
+const multiplyByTwo = multiply(2)
+multiplyByTwo(7)
 
-const multiplyByTwo = multiply(2);
-multiplyByTwo(7);
-
-const multiplyByThree = multiply(2);
-multiplyByThree(1);
+const multiplyByThree = multiply(2)
+multiplyByThree(1)

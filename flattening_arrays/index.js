@@ -1,6 +1,5 @@
 const arr = [[[[[0]], [1]], [[[2], [3]]], [[4], [5]]]]
-console.log(arr.flat(4)) //4 is the depth of nesting
-
+//console.log(arr.flat(4)) //4 is the depth of nesting
 function flatten(ary) {
   return ary.reduce(function (a, b) {
     if (Array.isArray(b)) {

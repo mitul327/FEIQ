@@ -1,4 +1,4 @@
-const str = 'Hello';
+const str = 'Hello'
 
 /* function reverseString(str) {
     // Step 1. Use the split() method to return a new array
@@ -12,10 +12,10 @@ const str = 'Hello';
 }
  */
 
- //Chaining the three methods together
+//Chaining the three methods together
 function reverseString(str) {
-    return str.split("").reverse().join("");
+  return str.split('').reverse().join('')
 }
 
-const reversedString = reverseString(str);
-console.log(reversedString);
+const reversedString = reverseString(str)
+console.log(reversedString)
