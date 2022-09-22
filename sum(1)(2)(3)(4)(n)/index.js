@@ -1,4 +1,4 @@
-/* const sum = function(a) {
+/*  const sum = function(a) {
     return function(b) {
         if(b) {
             return sum(a + b);
