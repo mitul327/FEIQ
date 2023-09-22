@@ -18,8 +18,8 @@ const name2 = {
 }
 
 //function borrowing
-fullName.call(name2, 'Dehradun', 'Uttrakhand') // call
-fullName.apply(name2, ['Dehradun', 'Uttrakhand']) //apply
+fullName.call(name2, 'Surat', 'Gujarat') // call
+fullName.apply(name2, ['Surat', 'Gujarat']) //apply
 
 //bind
 const printFullName = fullName.bind(name2, 'Dehradun', 'Uttrakhand')
